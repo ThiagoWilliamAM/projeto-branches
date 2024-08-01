@@ -2,8 +2,11 @@ import random
 
 
 num = input("digite um numero inteiro: ")
-if int(num) % 2 == 0:
-    print(f"{num} é par")
+if num.isnumeric():
+    if int(num) % 2 == 0:
+        print(f"{num} é par")
+    else:
+        print(f"{num} é impar")
 else:
-    print(f"{num} é impar")
+    print("digite somente numeros")
 
